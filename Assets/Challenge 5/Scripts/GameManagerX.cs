@@ -54,7 +54,7 @@ public class GameManagerX : MonoBehaviour
     IEnumerator Timer()
     {
         int timer = 60;
-        while(timer > -1)
+        while(timer > -1 && isGameActive)
         {
             timerText.text = "Time: " + timer;
             yield return new WaitForSeconds(1);
